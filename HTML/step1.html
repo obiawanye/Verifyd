@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verifyd</title>
     <link rel="stylesheet" href="../CSS/step1.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
 
   <body class="body">
@@ -24,36 +24,47 @@
 
         <label>NAFDAC NUMBER <span class="required">*</span></label>
 
-    <div class="reg-number">
-        <div class="reg-prefix">REG</div>
-
-        <input
-            type="text"
-            placeholder="A1 - XXXX"
-        />
-    </div>
-    <div class="format">
-        Format: A1 - 1234 . Found on the product label or packaging
-    </div>
-
-    <label>PRODUCT NAME <span class="optional-dot"> . </span><span class="optional">optional</span></label>
-
-    <div class="product-name">
-        <input
-            type="text"
-            placeholder="e.g. Paracetamol 500g"
-        />
-    </div>
-    <div class="name-location">
-        <div class="field">
-            <label>YOUR NAME <span class="required">*</span></label>
-            <input type="text" placeholder="e.g. Full Name"/>
+        <div class="reg-number">
+            <div class="reg-prefix">REG</div>
+            <input
+                type="text"
+                placeholder="A1 - XXXX"
+            />
+        </div>
+        <div class="format">
+            Format: A1 - 1234 . Found on the product label or packaging
         </div>
 
-        <div class="field">
-        <label>YOUR LOCATION <span class="required">*</span></label>
-        <input type="text" placeholder="e.g. Port Harcourt, Rivers"/>
+        <label>PRODUCT NAME <span class="optional-dot"> . </span><span class="optional">optional</span></label>
+
+        <div class="product-name">
+            <input
+                type="text"
+                placeholder="e.g. Paracetamol 500g"
+            />
         </div>
-    </div>
+        <div class="name-location">
+            <div class="field">
+                <label>YOUR NAME <span class="required">*</span></label>
+                <input type="text" placeholder="e.g. Full Name"/>
+            </div>
+
+            <div class="field">
+            <label>YOUR LOCATION <span class="required">*</span></label>
+            <input type="text" placeholder="e.g. Port Harcourt, Rivers"/>
+            <h6><i class="fa-solid fa-location-dot"></i> Detect my location</h6>
+            </div>
+        </div>
+        <button class="verify-button">Verify now</button>
+
+        <div class="barcode-option">
+            <div class="barcode-icon">
+            </div>
+
+            <div class="barcode-text">
+                <h4>Scan Barcode</h4>
+                <p>Open camera to scan product barcode</p>
+            </div>
+        </div>
     </section>
   </body>

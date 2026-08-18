@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f7f8f6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: relative;
+  text-decoration: none;
+}
+
+.nafdac {
+    background-color: #ffffff;
+}

@@ -24,7 +24,7 @@
 
 .nafdac {
     background-color: #ffffff;
-    margin-top: 230px;
+    margin-top: 100px;
     margin-left: 292px;
     border-radius: 32px;
     width: 433px;
@@ -225,12 +225,66 @@
     margin-left: 30px;
 }
 
+
+
 .barcode-option {
     width: 373px;
-    height: 45px;
+    height: 55px;
     border: 1px dashed #777;
     border-radius: 12px;
-    overflow: hidden;
     margin-left: 30px;
     margin-top: 20px;
+}
+
+.barcode-text h3, .barcode-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.barcode-text p {
+    width: 373px;
+    height: 27px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;                   
+    font-size: 14px;
+    line-height: 100%;
+    color: #00000059;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.barcode-text h4 {
+    width: 221px;
+    height: 9px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;                   
+    font-size: 12px;
+    line-height: 100%;
+    color: #000000;
+    padding: 0 20px;
+    
+}
+
+.security-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #BDBDBD;
+    padding-top: 16px;
+    font-size: 10px;
+    width: 373px;
+    height: 19px;
+    text-align: center;
+    color: #777;
+    font-family: 'Inter', sans-serif;
+}
+
+.security-info > div {
+    flex: 1;
+}
+
+.security-info > span {
+    margin: 0 16px;
 }

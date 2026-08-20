@@ -22,13 +22,81 @@
   background: #f7f8f6;
 }
 
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #777;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #777;
+}
+
+.step-active .step-number {
+    background-color: #1A5C2E;
+    border-color: #1A5C2E;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.step-active span {
+    color: #1A5C2E;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+
+}
+
+.step span {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #777;
+}
+
+.step-line {
+    width: 150px;
+    height: 1px;
+    background-color: #C8C8C8;
+    margin: 0 14px;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
 .nafdac {
     background-color: #ffffff;
-    margin-top: 100px;
-    margin-left: 292px;
     border-radius: 32px;
     width: 433px;
     height: 798px;
+    flex-shrink: 0;
 }
 
 .nafdac h3 {
@@ -174,10 +242,22 @@
 
 .name-location {
     display: flex;
+    gap: 10px;
+    width: 373px;
+    margin-left: 30px;
 }
 
 .field {
     flex: 1;
+    min-width: 0;
+}
+
+.field label {
+    display: block;
+    padding: 0;
+    margin-left: 0;
+    width: auto;
+    margin-bottom: 8px;
 }
 
 .field input {
@@ -186,12 +266,12 @@
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    line-height: 100%;
+    line-height: 180px;
     color: #00000059;
     width: 180px;
     height: 45px;
-    margin-left: 30px;
     overflow: hidden;
+    box-sizing:border-box;
     border: 1px solid #777;
     border-radius: 12px;
     padding-left: 10px;
@@ -279,6 +359,8 @@
     text-align: center;
     color: #777;
     font-family: 'Inter', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .security-info > div {
@@ -287,4 +369,49 @@
 
 .security-info > span {
     margin: 0 16px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.live {
+    width: 400px;
+    height: 372px;
+    background: #0F2215F7;
+    border-radius: 32px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.live-header {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.live-dot {
+    color: #48D77C;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.live h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    height: 30px;
+    width: 203px;
 }

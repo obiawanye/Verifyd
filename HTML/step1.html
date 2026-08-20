@@ -14,90 +14,112 @@
     <nav class="navbar">
         <img src="../Assets/verifyd_logo.png" alt="Logo" class="logo" />
     </nav>
-
-    <section class="nafdac">
-        <h3>Step 1 . ENTER NAFDAC NUMBER</h3>
-
-        <h1>Verify before you trust.</h1>
-
-        <p>Confirm if a product's NAFDAC regulation number is authentic</p>
-
-        <label>NAFDAC NUMBER <span class="required">*</span></label>
-
-        <div class="reg-number">
-            <div class="reg-prefix">REG</div>
-            <input
-                type="text"
-                placeholder="A1 - XXXX"
-            />
-        </div>
-        <div class="format">
-            Format: A1 - 1234 . Found on the product label or packaging
+    <div class="steps">
+        <div class="step-active">
+            <div class="step-number">1</div>
+            <span>Enter details</span>
         </div>
 
-        <label>PRODUCT NAME <span class="optional-dot"> • </span><span class="optional">optional</span></label>
+        <div class="step-line"></div>
 
-        <div class="product-name">
-            <input
-                type="text"
-                placeholder="e.g. Paracetamol 500g"
-            />
+        <div class="step">
+            <div class="step-number">2</div>
+            <span>Checking database</span>
         </div>
-        <div class="name-location">
-            <div class="field">
-                <label>YOUR NAME <span class="required">*</span></label>
-                <input type="text" placeholder="e.g. Full Name"/>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <span>View Result</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <section class="nafdac">
+            <h3>Step 1 . ENTER NAFDAC NUMBER</h3>
+
+            <h1>Verify before you trust.</h1>
+
+            <p>Confirm if a product's NAFDAC regulation number is authentic</p>
+
+            <label>NAFDAC NUMBER <span class="required">*</span></label>
+
+            <div class="reg-number">
+                <div class="reg-prefix">REG</div>
+                <input
+                    type="text"
+                    placeholder="A1 - XXXX"
+                />
+            </div>
+            <div class="format">
+                Format: A1 - 1234 . Found on the product label or packaging
             </div>
 
-            <div class="field">
-            <label>YOUR LOCATION <span class="required">*</span></label>
-            <input type="text" placeholder="e.g. Port Harcourt, Rivers"/>
-            <h6><i class="fa-solid fa-location-dot"></i> Detect my location</h6>
+            <label>PRODUCT NAME <span class="optional-dot"> • </span><span class="optional">optional</span></label>
+
+            <div class="product-name">
+                <input
+                    type="text"
+                    placeholder="e.g. Paracetamol 500g"
+                />
             </div>
-        </div>
-        <button class="verify-button">Verify now</button>
+            <div class="name-location">
+                <div class="field">
+                    <label>YOUR NAME <span class="required">*</span></label>
+                    <input type="text" placeholder="e.g. Full Name"/>
+                </div>
 
-        <div class="barcode-option">
-            <div class="barcode-icon">
+                <div class="field">
+                <label>YOUR LOCATION <span class="required">*</span></label>
+                <input type="text" placeholder="e.g. Port Harcourt, Rivers"/>
+                <h6><i class="fa-solid fa-location-dot"></i> Detect my location</h6>
+                </div>
+            </div>
+            <button class="verify-button">Verify now</button>
+
+            <div class="barcode-option">
+                <div class="barcode-icon">
+                </div>
+
+                <div class="barcode-text">
+                    <h4>Scan barcode instead</h4>
+                    <p> Open camera to scan product barcode</p>
+                </div>
             </div>
 
-            <div class="barcode-text">
-                <h4>Scan barcode instead</h4>
-                <p> Open camera to scan product barcode</p>
+            <br>
+
+            <div class="security-info">
+            <div>SSL Secured</div>
+
+            <span>•</span>
+
+            <div>
+                No data stored without<br>
+                consent
             </div>
-        </div>
 
-        <br>
+            <span>•</span>
 
-        <div class="security-info">
-        <div>SSL Secured</div>
-
-        <span>•</span>
-
-        <div>
-            No data stored without<br>
-            consent
-        </div>
-
-        <span>•</span>
-
-        <div>
-            Reports forwarded to<br>
-            NAFDAC
-        </div>
+            <div>
+                Reports forwarded to<br>
+                NAFDAC
+            </div>
 
 
-    </section>
-
-    <div class="dashboard">
-        <section class="live">
-            <span class="live-dot"></span><h3>TODAY LIVE</h3>
-            <h2>12,431</h2>
-            <h6>Products verified across 36 states</h6>
         </section>
 
-        <section class="checks">
-            
-        </section>
+        <div class="dashboard">
+            <section class="live">
+                <div class="live-header">
+                    <span class="live-dot">•</span><h3>TODAY LIVE</h3>
+                </div>
+                <h2>12,431</h2>
+                <h6>Products verified across 36 states</h6>
+            </section>
+
+            <section class="checks">
+
+            </section>
     </div>
   </body>

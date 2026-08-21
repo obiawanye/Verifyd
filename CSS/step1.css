@@ -236,7 +236,7 @@
     padding-left: 10px;
 }
 
-.product-name {
+.nafdac .product-name {
     padding-bottom: 32px;
 }
 
@@ -527,8 +527,8 @@
     height: 414px;
     background-color: #FFFFFF;
     border-radius: 32px;
-    margin-left: 30px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .checks-header {
@@ -551,4 +551,114 @@
 .filter-buttons {
     display: flex;
     gap: 16px;
+}
+
+.filter {
+    height: 27px;
+    padding: 0 10px;
+    border: 1px solid #777;
+    border-radius: 25px;
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
+
+.filter.active {
+    background-color: #1A5C2E;
+    border-color: #1A5C2E;
+    color: white;
+}
+
+.check-item {
+    height: 109px;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    height: 34px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 14px;
+    height: 34px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.status.verified {
+    background-color: #EAF5EC;
+    color: #1A5C2E;
+}
+
+.status.unverified {
+    background-color: #FDEEEE;
+    color: #C9362B;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: currentColor;
+    flex-shrink: 0;
+}
+
+.check-time {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+}
+
+.product-name {
+    margin-top: 16px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #111;
+}
+
+.product-info {
+    margin-top: 2px;
+
+    display: flex;
+    gap: 8px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+
+    color: #777;
+}
+
+.product-info span {
+    color: #768A77;
+}
+
+.checks .product-name {
+    margin-top: 16px;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
 }

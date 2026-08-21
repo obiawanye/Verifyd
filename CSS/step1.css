@@ -406,12 +406,19 @@
 }
 
 .live-dot {
-    color: #48D77C;
     width: 8px;
     height: 8px;
+    background-color: #48D77C;
     border-radius: 50%;
-    font-size: 20px;
-    display: inline-block;
+    flex-shrink: 0;
+}
+
+.live-separator {
+    color: #768A77;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .live h2 {
@@ -419,6 +426,129 @@
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-    height: 30px;
-    width: 203px;
+    line-height: 100%;
+    margin: 10px 0 4px;
+}
+
+.live h6 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    margin: 0 0 28px;
+    color: #D9D9D9;
+}
+
+.stat {
+    margin-top: 0px;
+}
+
+.stat + .stat {
+    margin-top: 10px;
+}
+
+.category {
+    font-family: 'Inter' sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    height: 9px;
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentage.green {
+    color: #48D77C;
+}
+
+.percentage.red {
+    color: #FF4D4D;
+}
+
+.percentage.yellow {
+    color: #FFC21A;
+}
+
+.stat-number {
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    line-height: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.authentic {
+    width: 95.3%;
+    background-color: #48D77C;
+}
+
+.fake {
+    width: 4.7%;
+    background-color: #FF4D4D;
+}
+
+.reports {
+    width: 22%;
+    background-color: #FFC21A;
+}
+
+.checks {
+    width: 400px;
+    height: 414px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.checks-header {
+    display: flex;
+    height: 87px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.checks-header h3 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 16px;
 }
